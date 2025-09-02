@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,866;1,14..32,866&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", "Inter", sans-serif;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    padding: 10px 20px
+}
+
+nav{
+    display: flex;
+    gap: -50px;
+    justify-content: space-around;
+    padding: 15px 20px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+}
