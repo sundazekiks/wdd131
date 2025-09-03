@@ -33,7 +33,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 500px;
     padding: 30px 90px;
-    margin: 0 50px;
     gap: 10px;
     justify-content: space-around;
 }
