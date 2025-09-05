@@ -2,56 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – Travis Abuton</title>
     <link rel="stylesheet" href="styles/base.css">
-    <meta name="description" content="Explore WDD 131 – Dynamic Web Fundamentals with Travis Abuton. This course site highlights key learning resources, projects, and links to Canvas, LinkedIn, and scripture study.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Travis Abuton">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Travis Abuton Course Landing Page Term 5 BYU IDAHO">
+    <title>WDD 131 – Dynamic Web Fundamentals – Travis Abuton</title>
 </head>
 <body>
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
             <a href="https://www.linkedin.com/in/travis-abuton-b30145343/">LinkedIn</a>
             <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/10?lang=eng&id=p18#p18">Scripture Verse</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/10?lang=eng&id=p18#p18">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
     <main>
-        <h1 style="grid-column: 1 / 3; border: 1px black solid;">Travis Abuton</h1>
-        <section class="card">
-            <h2>About me</h2>
-            <div class="about">
-                <div class="intro-name">
-                    <p style="
-                        display: inline-block;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum at doloremque obcaecati placeat commodi incidunt voluptas exercitationem, ipsam error alias optio maiores magni cumque dolores possimus, officiis, tempore quisquam.
-                    </p>
-                    <h4>
-                        Oroquieta, Philippines
-                    </h4>
+        <h1>Travis Abuton</h1>
+        <div class="cards">
+            <section class="card">
+                <h1>About Me</h1>
+                <div class="card-content">
+                    <div class="intro">
+                        <p>Hi, I’m Travis 👋
+                            <br>
+                            <br>
+                            I’m a passionate developer and problem-solver who loves building clean, user-friendly, and impactful digital experiences. My portfolio showcases projects that reflect my skills in web development, design, and creative problem-solving.
+                        </p>
+                        <h2>Oroquieta, Philippines</h2>
+                        <hr>
+                    </div>
+                    <div class="img-holder">
+                        <img src="images/profilePic.webp" alt="myProfilePic">
+                    </div>
                 </div>
-                <div class="image-holder">
-                    <img src="images/profilePic.jpg" alt="">
+                <div class="card-nationality">
+                    <div class="img-holder flag">
+                        <img src="images/PhilippineFlag.webp" alt="The Philippine Flag">
+                        <p class="flag-description">The Philippine Flag</p>
+                    </div>
+                    <div class="text-about-the-ph">
+                        <p>The Philippines is a Southeast Asian country made up of over 7,600 islands, known for its stunning beaches, diverse culture, and warm hospitality. It has a rich history influenced by indigenous traditions, Spanish colonization, and American heritage. Today, the Philippines is recognized for its natural beauty, vibrant festivals, and the resilience and creativity of its people.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-        </section>
+            </section>
+            <section class="card">
+                <h1>Web Dev Resources</h1>
+                <div class="list-items">
+                    <div class="items">
+                        <a href="">Dev.to Community</a>
+                        <a href="">Smashing Magazines</a>
+                        <a href="">CSS Tricks</a>
+                        <a href="">W3 Schools</a>
+                        <a href="">Udemy</a>
+                        <a href="">Image Placeholder</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>
-            &copy;
-            <span id="currentyear"></span>
-            Travis Abuton
-            Philippines
-        </p>
+        <p>&copy; <span id="currentyear"></span> Travis Abuton Philippines</p>
+        <br>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdates.js" defer>
-
-    </script>
-</body>
+    <script src="scripts/getdates.js" defer></script>
+</body> 
 </html>
