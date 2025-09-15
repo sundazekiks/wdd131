@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A photo album of various temples around the world.">
+    <meta name="keywords" content="temples, photo album, architecture, travel">
+    <meta name="author" content="Travis Abuton">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/temple.js" defer></script>
+    <title>Temple Album</title>
+</head>
+<body>
+    <header>
+        <span>Temple Album</span>
+        <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+        <nav id="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+        <style>
+            
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.getElementById('main-nav');
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('open');
+            });
+            });
+        </script>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="temple-gallery">
+            <figure>
+                <img src="images/temples/abidjanTemple.webp" alt="Abidjan Temple Nigeria">
+                <figcaption>Abidjan Ivory Coast Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/abuquerque_temple_lds.webp" alt="Albuquerque New Mexico Temple">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/accra_ghana_temple_lds.webp" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/adelaide_australia_temple_lds.webp" alt="Adelaide Australia Temple">
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/alabang_philippines_temple_exterior.webp" alt="Alabang Philippines Temple">
+                <figcaption>Alabang Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/anchorage_alaska_temple_lds.webp" alt="Anchorage Alaska Temple">
+                <figcaption>Anchorage Alaska Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/bacolod_philippines_temple_exterior_rendering.webp" alt="Bacolod Philippines Temple">
+                <figcaption>Bacolod Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/nigeriaTemple.webp" alt="Aba Nigeria Temple">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/temple_rendering_austin_texas_temple.webp" alt="Austin Texas Temple">
+                <figcaption>Austin Texas Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Travis Abuton Philippines</p>
+        <br>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
