@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ff9800;
+    --font-color: #333;
+    --background-color: #f4f4f4;
+    --max-width: 1200px;
+    --padding: 1.5rem;
+    --font-family: "Montserrat", sans-serif;
+    --font-family-alt: "EB Garamond", sans-serif;
+    --text-color: #db0000;
+    --background-color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: var(--font-family);
+    letter-spacing: 2px;
+    font-size: 50px;
+    grid-column: 1;
+    background: red;
+    padding: 1rem;
+    background: white;
+}
+
+.box {
+    height: 30px;
+    background: red;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-box {
+    height: 30px;
+    width: 250px;
+    background: white;
+}
+
+main {
+    width: 100%;
+    height: auto; 
+    position: relative;
+}
+
+
+
+picture img{
+    width: 100%;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.table {
+    position: absolute;
+    padding: 5rem 2rem 1rem 2rem;
+    width: 250px;
+    background: rgba(250, 250, 250, 1);
+    box-shadow: 2px 2px 4px 3px rgba(10, 6, 6, 0.5);
+    border-radius: 4px;
+}
+
+.table h2 {
+    padding: 10px 20px;
+    position: absolute;
+    top: 10px;
+    left: -7px;
+    width: 240px;
+    background: var(--text-color);
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+.table h2 i {
+    color: rgba(255, 255, 255, 1);
+}
+
+.datas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row p:first-child {
+    text-align: end;
+}
+
+.row p {
+    font-family: var(--font-family-alt);
+}
+
+
+.data {
+    top: 50px;
+    left: 50px;
+}
+
+.weather {
+    bottom: 50px;
+    right: 50px;
+}
+
+footer {
+    padding: 3rem;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
