@@ -173,3 +173,6 @@ footer p{
     gap: 30px;
 }
 
+#lastModified {
+    text-align: center;
+}
