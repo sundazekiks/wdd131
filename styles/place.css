@@ -96,6 +96,7 @@ picture img{
     color: rgba(255, 255, 255, 1);
 }
 
+
 .datas {
     width: 100%;
     display: flex;
@@ -127,6 +128,7 @@ picture img{
     bottom: 50px;
     right: 50px;
 }
+
 
 #lastModified{
     text-align: center;
