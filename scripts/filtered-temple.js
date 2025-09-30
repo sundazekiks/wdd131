@@ -118,11 +118,13 @@ function clickedNew(){
 }
 
 const render = (filteredTemple) => {
-    
+    const h1Elem = document.createElement('h1');
+    h1Elem.textContent = "Temples";
+    h1Elem.setAttribute('id', 'title');
     mainHero.innerHTML = "";
+    mainHero.appendChild(h1Elem);
     filteredTemple.map((temple) => {
         console.log(temple.templeName);
-
         const divElem = document.createElement('div');
         const h1 = document.createElement('h1');
         const p = document.createElement('p');
@@ -134,6 +136,7 @@ const render = (filteredTemple) => {
         h1.classList.add("templeName");
         h1.textContent = `${temple.templeName}`;
         divElem.appendChild(h1);
+
 
         p.classList.add('p-tags');
         p1.classList.add('p-tags');
@@ -149,7 +152,7 @@ const render = (filteredTemple) => {
         divElem.appendChild(p2);
         divElem.appendChild(img);
 
-
+        
         mainHero.appendChild(divElem);
         
     })

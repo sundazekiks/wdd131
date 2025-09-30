@@ -97,12 +97,12 @@ width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-    border: 1px solid black;
-    justify-items: center;
+justify-items: center;
     padding: 2rem;
 }
-#homeTitle{
-    grid-column: 1/4;
+
+#title{
+    grid-column: span 3;
 }
 
 .temple-gallery img {
@@ -116,7 +116,6 @@ width: fit-content;
 
 .temple-card{
     width: fit-content;
-    border: 1px solid black;
     height: 350px;
     padding: 2rem ;
     overflow: hidden;
@@ -126,6 +125,8 @@ width: fit-content;
     font-size: 16px;
     text-align: center;
 }
+
+
 
 .p-tags{
     font-size: 15px;
