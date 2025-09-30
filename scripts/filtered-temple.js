@@ -119,7 +119,7 @@ function clickedNew(){
 
 const render = (filteredTemple) => {
     const h1Elem = document.createElement('h1');
-    h1Elem.textContent = "Temples";
+    h1Elem.textContent = "Temple";
     h1Elem.setAttribute('id', 'title');
     mainHero.innerHTML = "";
     mainHero.appendChild(h1Elem);
