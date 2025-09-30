@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A photo album of various temples around the world.">
+    <meta name="keywords" content="temples, photo album, architecture, travel">
+    <meta name="author" content="Travis Abuton">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/filtered-temple.js" defer></script>
+    <title>Temple Album</title>
+</head>
+<body onload="renderOnLoad()">
+    <header>
+        <span>Temple Album</span>
+        <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+        <nav id="main-nav">
+            <a href="#" id="Home" onclick="clickedHome()">Home</a>
+            <a href="#" onclick="clickedOld()">Old</a>
+            <a href="#" onclick="clickedNew()" >New</a>
+            <a href="#" onclick="clickedLarge()">Large</a>
+            <a href="#" onclick="clickedSmall()">Small</a>
+        </nav>
+    </header>
+    <main id="main-hero">
+        <h1 id="homeTitle">Home</h1>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Travis Abuton Philippines</p>
+        <br>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

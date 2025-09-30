@@ -146,7 +146,12 @@ width: fit-content;
     width: 100%;
 }
 
-
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 
 
 /* Exactly 3 columns on large screens, with consistent image sizes */
