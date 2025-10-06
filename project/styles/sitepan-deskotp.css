@@ -1,0 +1,38 @@
+
+
+*{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+main{
+    padding: 2rem;
+}
+
+main h1{
+    font-size: 30px;
+    text-indent: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 2rem;
+}
+
+.content p{
+    padding-left: 35px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
