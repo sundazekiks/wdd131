@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Travis Abuton">
+    <meta name="description" content="Product Review Form - Week 5">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review Form - Travis Abuton</title>
+</head>
+<body onload="loadSelectValues()">
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="productName" id="prodName" required>
+                    <option value="" disabled selected>Select a product</option>
+                </select>
+            </fieldset>
+            <fieldset class="stars">
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" id="dateOfinstallation" name="date" required>
+            </fieldset>
+            <fieldset class="freview">
+                <legend>Feature Review</legend>
+                <div>
+                    <label for="durability">Durability</label>
+                    <input type="checkbox" id="durability" name="durability" value="durability">
+                </div>
+                <div>
+                    <label for="EaseOfUse">Ease of Use</label>
+                    <input type="checkbox" id="EaseOfUse" name="EaseOfUse" value="EaseOfUse">
+                </div>
+                <div>
+                    <label for="Design">Design</label>
+                    <input type="checkbox" id="Design" name="Design" value="Design">
+                </div>
+                <div>
+                    <label for="Performance">Performance</label>
+                    <input type="checkbox" id="Performance" name="Performance" value="Performance">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <textarea name="writtenReview" id="writtenReview"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name (Optional)</legend>
+                <input type="text" id="userName" name="userName" placeholder="Enter your name">
+            </fieldset>
+            <input type="submit" value="SUBMIT">
+        </form> 
+    </main>
+    <footer>
+        <p>&copy; Travis Abuton - Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

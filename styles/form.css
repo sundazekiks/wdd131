@@ -1,0 +1,97 @@
+*{
+    font-family: "Montserrat", sans serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header, footer{
+    background: rgba(0, 128, 255, 0.8);
+    padding: 2rem;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    gap: 20px;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+.freview{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+// Ratings
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
