@@ -1,0 +1,89 @@
+.contact-content h1{
+    color: black;
+    font-size: 18px;
+}
+
+.contact-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 40px;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+label {
+    color: black;
+}
+
+input {
+    color: black;
+    font-weight: 200;
+    padding: 1px 5px;
+}
+
+
+fieldset{
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+legend{
+    color: black;
+    padding: 0 10px;
+}
+
+.inputarea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.contactAndForm{
+    display: flex;
+    gap: 10px;
+}
+
+.contactCard{
+    padding: 2rem 3rem;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.contactCard h1{
+    font-size: 36px;
+    padding-right: 100px;
+}
+
+.contactDetails {
+    margin-left: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactDetails p{
+    color: black;
+    font-weight: 600;
+}
+
+.logoNE img{
+    position: absolute;
+    right: 1px;
+    width: 70px;
+}
+.logoNE {
+    position: relative;
+}
+
+
+

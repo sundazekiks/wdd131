@@ -1,0 +1,123 @@
+*{
+    font-size: 16px;
+    font-family: "Montserrat", sans serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    box-sizing: border-box;
+}
+
+html, body {
+    
+    display: flex;
+    flex-direction: column;
+    background: #004687;
+}
+span {
+    font-weight: 400;
+}
+
+header {
+    background: #004687;
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+    padding: 10px;
+}
+
+footer {
+    background: #004687;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    padding: 3rem 0;
+
+}   
+
+footer p {
+    font-weight: 400;
+}
+
+.logoAndCoTitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoAndCoTitle h1 {
+    font-size: 34px;
+}
+
+.logo {
+    width: 90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  transition: color 0.3s ease;
+  padding: 4px 0; 
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+    min-height:100vh;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  .logoAndCoTitle h1{
+    font-size: 17px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .contactAndForm {
+    flex-direction: column;
+    padding: 2rem;
+    width: 414px;
+  }
+
+  main {
+    width: 414px;
+  }
+
+  .contactCard h1{
+    font-size: 16px;
+  }
+
+}
+

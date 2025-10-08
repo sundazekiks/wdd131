@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Travis Abuton">
+    <meta name="description" content="Nest Edge Real Estate Landing Page">
+    <link rel="stylesheet" href="styles/website-project-desktop.css">
+    <link rel="stylesheet" href="styles/cotact-content.css">
+
+
+    <script src="scripts/website-project.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Nest Edge Real Estate</title>
+</head>
+<body>
+    <header>
+        <div class="logoAndCoTitle">
+            <div class="logo">
+                <img src="images/nestedge_logo_icon.png" alt="nest-edge-real-estate">
+            </div>
+            <h1>Nest Edge Real Estate</h1>
+        </div>
+        <nav class="navigationBar">
+            <a href="website-project-homepage.html">HOME</a>
+            <a href="website-project-about.html">ABOUT</a>
+            <a href="website-project-contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-content">
+            <h1>We’re Ready to Help — Just Fill Out the Form Below</h1>
+            <div class="contactAndForm">
+                <div class="contactCard">
+                    <h1>Nest Edge Real Estate</h1>
+                    <div class="contactDetails">
+                        <p>123 Main St, Virginia Beach, VA 23663</p>
+                        <p>+1 (757) 890-3567</p>
+                        <p>nestEdge@re.com</p>
+                    </div>
+                    <div class="logoNE">
+                        <img src="images/nestedge_logo_icon.png" alt="Nest Edge Real Estate Logo">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form onsubmit="handleSubmitForm(event)">
+                        <fieldset>
+                            <legend>Contact Info</legend>
+                            <div class="inputarea">
+                                <label for="NameOfOwner">Name: </label>
+                                <input type="text" id="NameOfOwner" required>
+                            </div>
+                            <div class="inputarea">
+                                <label for="PhoneNumber">Phone Number: </label>
+                                <input type="text" id="PhoneNumber" required>
+                            </div>
+                            <div class="inputarea">
+                                <label for="PropertyAddress">Property Address: </label>
+                                <input type="text" id="PropertyAddress" required>
+                            </div>
+                            <input type="submit" value="SUBMIT">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Nest Edge Real Estate <span id="yearUpToDate"></span></p>
+    </footer>
+</body>
+</html>

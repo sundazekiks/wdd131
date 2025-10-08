@@ -1,0 +1,76 @@
+@media screen and (max-width: 1000px) {
+  .welcome-message h1, strong{
+    font-size: 33px;
+  }
+  .welcome-message h2{
+    font-size: 31px;
+  }
+  .welcome-intro{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .welcome-message h1, strong{
+    font-size: 27px;
+  }
+  .welcome-message h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .welcome-intro{
+    font-size: 21px;
+  }
+  .logoAndCoTitle h1{
+    font-size: 28px;
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    .contents {
+        display: flex;
+        align-items: center;
+    }
+
+    .welcome-message{
+        margin: auto 20px;
+    }
+
+  .contents h1, h2, p{
+    text-align: center;
+  }
+
+  .contents h1, strong{
+    font-size: 18px;
+  }
+
+  .contents h2{
+    margin-top: 10px;
+    font-size: 19px;
+  }
+  
+  
+  .welcome-message h2{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .welcome-intro{
+    font-size: 16px;
+  }
+
+  .setAptBtn{
+    font-size: 10px;
+  }
+
+  .logo{
+    width: 40px;
+  }
+
+  .logoAndCoTitle h1{
+    font-size: 20px;
+  }
+}
+
+

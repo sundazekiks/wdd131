@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 414px) {
+  .contactAndForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
