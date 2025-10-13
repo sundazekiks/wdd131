@@ -3,5 +3,9 @@
   .contactAndForm {
     display: flex;
     flex-direction: column;
+    padding: 40px;
+  }
+  .contactAndForm h1{
+    font-size: 20px;
   }
 }
