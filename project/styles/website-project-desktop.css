@@ -23,14 +23,14 @@ header {
     background: #004687;
     display: flex;
     justify-content: space-between;
-    align-item: center;
+    align-items: center;
     padding: 10px;
 }
 
 footer {
     background: #004687;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: center;
     padding: 3rem 0;
 
